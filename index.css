@@ -69,3 +69,8 @@ body
     font-size: 30px;
     box-shadow: 5px 20px 20px 20px rgba(158, 9, 9, 0.748);
 }
+.bks h1
+{
+    padding: 20px 20px;
+    font-family: sans-serif;
+}
