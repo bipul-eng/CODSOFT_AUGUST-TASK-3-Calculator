@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Calculator">
+        <form>
+        <div class="input">
+            <input class="row1" type="text" name="display">
+        </div>
+        <div class="bks">
+            <h1>Calculator</h1>
+        </div>
+        <div class="col1">
+            <input class="button" type="button" value="AC" onclick="display.value='  '"></input>
+             <input  class="button" type="button" value="DEL"  onclick="display.value=display.value.toString().slice(0,-1)"></input>
+              <input  class="button" type="button" value="."  onclick="display.value+='.'"></input>
+               <input  class="button" type="button" value="/"  onclick="display.value+='/'"></input>
+        </div>
+            <div class="col2">
+            <input  class="button" type="button" value="7" onclick="display.value+='7'"></input>
+             <input  class="button" type="button" value="8"  onclick="display.value+='8'"></input>
+              <input  class="button" type="button" value="9"  onclick="display.value+='9'"></input>
+               <input  class="button" type="button" value="*"  onclick="display.value+='*'"></input>
+        </div>
+            <div class="col3">
+            <input  class="button" type="button" value="4"  onclick="display.value+='4'"></input>
+             <input  class="button" type="button" value="5"  onclick="display.value+='5'"></input>
+              <input  class="button" type="button" value="6"  onclick="display.value+='6'"></input>
+               <input  class="button" type="button" value="-"  onclick="display.value+='-'"></input>
+        </div>
+            <div class="col4">
+            <input  class="button" type="button" value="1"  onclick="display.value+='1'"></input>
+             <input  class="button" type="button" value="2"  onclick="display.value+='2'"></input>
+              <input  class="button" type="button" value="3"  onclick="display.value+='3'"></input>
+               <input  class="button"type="button" value="+"  onclick="display.value+='+'"></input>
+        </div>
+           <div class="col5">
+            <input  class="button" type="button" value="00"  onclick="display.value+='00'"></input>
+             <input  class="button" type="button" value="0"  onclick="display.value+='0'"></input>
+              <input  class="button1" type="button" value="="  onclick="display.value=eval(display.value)"></input>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
